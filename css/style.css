@@ -1,0 +1,19 @@
+/* For complete CSS reference related to typography, navigate to https://www.w3schools.com/cssref/ and search for "text" or "font" */
+
+/*
+Check out the following resource:
+Google Fonts: https://fonts.google.com/
+Adobe Color CC: https://color.adobe.com/
+*/
+
+body{
+    background-image: url("../img/background1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0,0,0);
+    font-family: ;
+}
+h1{
+    font-family: 'laila';
+}
