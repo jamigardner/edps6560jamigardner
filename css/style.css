@@ -15,5 +15,42 @@ body{
     font-family: ;
 }
 h1{
-    font-family: 'laila';
+    font-family: 'Qwigley';
 }
+h2{
+    font-family: 'Qwigley';
+    font-size: 400%;
+}
+h3{
+    font-family: 'Qwigley';
+    font-size: 300%;
+}
+#divider{
+    background-color: rgb(145,29,31);
+    height: 15px;
+        }
+#section_portfolio, #section_portfolio2{
+            
+    height: 400px;
+    background-color: rgb(255,255,255,0.35);
+    background
+    border-bottom: ;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+        }
+#section_contact{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 390px;
