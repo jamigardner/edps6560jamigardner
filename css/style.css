@@ -1,0 +1,147 @@
+/* For complete CSS reference related to typography, navigate to https://www.w3schools.com/cssref/ and search for "text" or "font" */
+
+/*
+Check out the following resource:
+Google Fonts: https://fonts.google.com/
+Adobe Color CC: https://color.adobe.com/
+*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: darkcyan;
+    font-family: 'Poppins', sans-serif;
+}
+.name{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+    
+.nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+}
+
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+h1{
+    font-family: 'Poppins';
+}
+
+h2{
+    font-family: 'Poppins';
+    font-size: 300%;
+}
+
+h3{
+    font-family: 'Poppins';
+    font-size: 200%;
+}
+h4{
+    
+}
+
+#section_portfolio, #section_portfolio2{
+    font-family: 'Poppins';
+    font-size: 100%;        
+    height: 460px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+        }
+
+#section_contact{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* The animation code */
+@keyframes logos {
+  33% { background-image: url(../img/Two%20Bees.svg);}
+  66% {background-image: url(../img/Photo%20Fun.svg);}
+  100% {background-image: url(../img/Dig&Dash.svg);
+    }
+}
+
+#artifact1{
+  width: 200px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: logos;
+  animation-duration: 10s; 
+  animation-iteration-count: infinite;
+}
+
+
