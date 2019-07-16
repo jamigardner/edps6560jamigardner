@@ -26,6 +26,10 @@ nav{
     width: 30%;
 }
 
+.nav-hide{
+    opacity: 0;
+}
+
 .nav-links li{
     list-style: none;
 }
