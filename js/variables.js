@@ -20,3 +20,7 @@ const navSlide = () => {
 
 
 navSlide();
+
+$('.nav-contact').on('click', () => {
+  $('.contact-form').toggle();
+});
